@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pachai</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            color: green;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            color: green;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 1250px;
+            height: 550px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 2px solid #ccc;
+            background-color: white;
+            border-radius: 5px;
+            border-top: solid green;
+            margin-top: 5px;
+            border-top-width:5px ;
+        }
+
+        label {
+            text-align: left;
+            margin-left: 30px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;}
+
+            select{
+            font-weight: bold;
+            margin-bottom: 30px;
+            width: 350px;
+            padding: 5px;    
+        }
+
+        input {
+            width: 350px;
+            padding: 5px;
+            margin-bottom: 10px;
+            
+
+        }
+
+        button {
+            background-color: #2e8a06;
+            color: white;
+            border-radius: 12%;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+
+        button:hover {
+            background-color: #1d5003;
+            border-radius: 12px;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        em {
+            color: orange;
+        }
+
+        textarea {
+            resize: vertical;
+            width: 1200px;
+            height: 140px;
+            padding: 5px;
+        }
+
+        /* Flex layout for rows */
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        thead{
+            font-weight: bolder;
+            padding-left: 100px;
+            margin-left: 50px;
+        }
+        th{
+            padding-left: 50px;
+        }
+
+        /* Style for each group of label and input */
+        .form-group {
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        /* Remove margin for the last item in a row */
+        .form-group:last-child {
+            margin-right: 0;
+        }
+        hr {
+            border: 1px solid  black; 
+            width: 200px; 
+            margin: 20px auto; 
+        }
+        h4{
+            font-weight: bolder;
+            text-align: center;
+            font-size: 30px;
+            color: #2e8a06;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><em>Pachai</em>.com</h1>
+        <hr>
+        <h2><p>Cash On Delivery</p></h2>
+
+        <form onsubmit="onFormSubmit()">
+            <!-- Row 1 -->
+            <div class="row" >
+                <div class="form-group" id="row">
+                    <label>Customer Type</label>
+                    <select>
+                        <option value="">Select</option>
+                        <option value="New Customer">New Customer</option>
+                        <option value="Old Customer">Old Customer</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Refer your Friend / Relative Name</label>
+                    <input type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>Refer Your Friend / Relative Phone Number</label>
+                    <input type="number">
+                </div>
+
+              
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row" >
+                <div class="form-group">
+                    <label>Enter Your Full Name</label>
+                    <input type="text">
+                </div>
+               
+
+                <div class="form-group">
+                    <label>Enter Your Phone No</label>
+                    <input type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>Enter correct Postal / Full Pincode</label>
+                    <input type="text">
+                </div>
+
+            </div>
+
+            <div class="Row">
+                <div class="form-group">
+                    
+                <div class="form-group">
+                    <label>Enter Your Full Address</label>
+                    <textarea name="address"></textarea>
+                </div>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <h3>Developed By <a href="https://jorim.net/">Jorim Technologies</a></h3>
+
+</form>
+  
+
+
+    <br>
+    <br>
+    <h4><em>Value</em> Table</h4>
+    
+    <table class="list"  id="storeList">
+       
+        <td>
+            
+          <thead>
+                <tr>
+                    
+                     <th> Customer type</th>
+                      
+                      <th>Refer your Friend / Relative Name</th>
+                      
+                      <th>Refer Your Friend / Relative Phone Number</th>
+                      
+                      <th>Enter Your Full Name</th>
+                      
+                     <th>Enter Your Phone No</th> 
+                      
+                     <th>Enter correct Postal / Full Pincode</th> 
+
+            </tr>      
+        </thead>
+
+        <tbody>
+
+
+        </tbody>
+            
+        </td>
+       
+    </table>
+   
+   
+  
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>
